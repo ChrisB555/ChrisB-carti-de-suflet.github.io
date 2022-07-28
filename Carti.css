@@ -1,0 +1,696 @@
+
+.container-fluid{
+    padding: 0;
+}
+#infobar p{
+    background-color: rgb(149, 20, 167);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+.logo img{
+    width: 120px;
+}
+
+#nav1{
+    padding:0px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; 
+    padding: 0; 
+    transition: 0.4s; 
+    position:fixed;
+    width: 100%;
+    top: 50px; 
+    z-index: 99;
+    background-color: white;
+}
+#nav1 li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.search-bar{
+    padding: 20px 10px;
+    cursor: pointer;
+}
+.search-btn{
+    background-color: steelblue;
+    color: white;
+    border: 1px solid steelblue;
+    cursor: pointer;
+}
+.search-btn:hover{
+    opacity: 0.7;
+}
+.nav-input{
+    width: 250px;
+}
+.verticalbar{
+    height: 30px;
+    width: 20px;
+    padding: 0;
+}
+.d-flex{
+    margin-left:320px;
+}
+#nav1 a{
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 14px;
+}
+.links{
+    padding: 0 ;
+    cursor: pointer;
+}
+.reverse{
+    float: right;
+}
+/* main navbar*/
+.navbar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin:150px 0 50px 0;
+    padding: 0;
+}
+.navbar li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+}
+
+#mainnav-btn{
+    background-color: steelblue;
+    color: white;
+    border: 1px solid steelblue;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+}
+#mainnav-btn a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.nav-btn{
+    background-color: white;
+    border:1px solid darkslategrey;
+    padding: 10px;
+}
+.nav-btn a{
+    color: darkslategrey;
+    font-size: 16px;
+    text-decoration: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+     min-width:200px ;
+
+}
+.dropdown-content a {
+    color: darkslategrey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+     
+    }
+.dropright{
+    list-style: none;
+    display: block;
+    position: relative;
+    left:0;
+   
+    }
+.dropright-content {
+        position:fixed;
+        display: none;
+        background-color: white;
+        color: darkslategrey;
+        left:490px;
+        top:260px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        width: 500px;
+        min-height:400px;
+    }
+.dropright-content a{
+        left: 10px;
+        top:20px;
+        padding:5px 20px;
+        text-align: left;
+        float: left;
+    }
+.dropright i{
+    font-size: 16px;
+    margin-left:10px;
+    color: silver;
+    right: 5px;
+    position: absolute;
+}
+.dropright i:hover{
+    color: darkslategrey;
+}
+.dropright a{
+        text-decoration: none;
+        color: darkslategrey;
+        font-size: 16px;
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+ .dropright:hover .dropright-content{
+        display:inline;
+    }
+ 
+ #sidemenu {
+        display: block;
+        padding: 10px;
+        height:400px;
+        width: 260px;
+        position:absolute;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        transition: height 1s;
+    }
+ .item-active:hover {
+        height: 300px;
+    }
+
+.titlu {
+    
+    padding:5px;
+    display:block;
+}
+.hide{
+    list-style: none;
+   position: relative;
+    left: 0;
+   display: none;
+}
+.hide-a{
+    display: none;
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 16px;
+   
+    position: relative;
+    text-align: left;
+}
+.hide-a i{
+    font-size: 16px;
+    margin-left:10px;
+    color: silver;
+    right: 5px;
+    position: absolute;
+}
+.hide-a:hover{
+    color: darkslategrey;
+}
+.hide-a i:hover{
+    color: darkslategrey;
+}
+.hide-content{
+    position:fixed;
+    display: none;
+    background-color: white;
+    color: darkslategrey;
+    left:490px;
+    top:260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 800px;
+    min-height:400px;
+}
+.hide-content a{
+    left: 10px;
+    top:20px;
+    padding:5px 20px;
+    text-align: left;
+    float: left;
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 16px;
+    display: block;
+}
+.hide:hover .hide-content{
+    display:inline;
+}
+    /*slider*/
+
+ #slider{
+       
+        width: 70%;
+        margin-left: 60px;
+    }
+ #slider-icon{
+        font-size: 50px;
+        color: white;
+    }
+ #icon-group{
+        margin-top: 30px;
+        padding: 0;
+        margin-left: 10px;
+    }
+ #icon-group p{
+        text-align: center;
+        font-size: 13px;
+        color: darkslategrey;
+    }
+ #icon-group h6{
+        text-align: center;
+        color: darkslategrey;
+        font-size:15px;
+    }
+#icon-group img{
+    width: 35px;
+}
+/*image group*/
+#image{
+    text-align: center;
+    margin-top: 270px;
+    
+}
+#image img{
+    width:359.86px;
+    height:359.86px;
+}
+#image p{
+    text-align: center;
+    font-size: 14px;
+    color: darkslategrey;
+}
+.big{
+    text-align: center;
+}
+
+/*owl sliders*/
+#carusel{
+    border: 1px solid silver;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: relative;
+    margin-top: 50px;
+}
+
+.item{
+    position: relative;  
+    cursor: pointer;
+    text-align: center;
+}
+
+.slider-card p{
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.slider-btn{
+    background-color: steelblue;
+    border: 1px solid steelblue;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top:8px;
+    left: 16px;
+}
+.pret-vechi{
+    color: silver;
+    font-weight: bold;
+    display: inline;
+}
+.pret-nou{
+    color:red;
+    font-weight: bold;
+    display: inline;
+}
+.slider-btn-nou{
+    background-color: springgreen;
+    border: 1px solid springgreen;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    top:8px;
+    left:80px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.owl-nav{
+    position: absolute;
+    right:20px;
+    top:-72px;
+    cursor: pointer;
+}
+.owl-nav .owl-prev {
+    color: silver;
+    background-color: white;
+    border: none;
+    font-size: 28px;
+    margin: 10px;
+    
+}
+.owl-nav .owl-next{
+    color: silver;
+    background-color: white;
+    border: none;
+    font-size:28px;
+    margin: 10px;
+    
+}
+.owl-prev:hover{
+    color: black;
+}
+.owl-next:hover{
+    color: black;
+}
+.owl-dots{
+    display: none;
+}
+/*newsletter*/
+
+#newsletter{
+    background-color: rgb(104, 101, 101);
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px 10px;
+    
+}
+.gray h5{
+   font-weight: bold;
+   color: white;
+   padding-bottom: 10px;
+}
+.gray p{
+    color: white;
+    font-size: 15px;
+}
+.form-control{
+    width: 40%;
+    font-size: 15px;
+    margin-top: 10px;
+    display: inline;
+}
+.btn{
+    width: 30%;
+    font-size: 15px;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.btn:hover{
+    opacity: 0.8;
+    color: white;
+}
+.check{
+    color: white;
+    font-size: 15px;
+   
+}
+.check:hover{
+    color: white;
+}
+.form-check p{
+    font-size: 15px;
+    color: white;
+}
+#defaultCheck1{
+    margin-left: 0;
+    float: none;
+}
+#social-icon{
+    font-size:40px;
+    color: white;
+}
+.gray a{
+    color: white;
+    text-decoration: none;
+   
+}
+/*footer*/
+#footer{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 15px;
+    color: darkslategrey;
+}
+.footer p{
+    font-size: 15px;
+    color: darkslategrey;
+}
+.footer img{
+    margin-bottom: 30px;
+}
+#whatsapp{
+    font-size: 40px;
+    color: white;
+    background-color: springgreen;
+    padding:8px 16px;
+    border:1px solid springgreen;
+    border-radius: 50%;
+    position: fixed;
+    left:30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+#arrow{
+    font-size: 20px;
+    color: white;
+    background-color: darkslategrey;
+    padding:5px 10px;
+    border: 1px solid darkslategrey;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right:40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+#feedback{
+    font-size: 20px;
+    padding: 5px;
+}
+.fixed-icons button{
+    font-size:16px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius:5px;
+    position: fixed;
+    bottom: 400px;
+    right:4px;
+    text-align: center;
+    transform: rotate(-90deg);
+    width: 110px;
+    transition: width 0.7s;
+}
+.fixed-icons button:hover{
+    opacity: 0.7;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 120px;
+}
+#mobile-nav{
+    display: none;
+}
+#mobile-logo{
+    display: none;
+}
+/*media screen*/
+@media screen and (max-width:1300px ){
+    #mobile-logo{
+        display: none;
+    }
+    #slider{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width:1100px ){
+#infobar{
+    height: 60px;
+}
+    #infobar p{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .search-bar,.links{
+        display: none;
+    }
+    
+    #nav1{
+     display: none;
+    }
+    #mobile-logo{
+        display: block;  
+        height:0px;  
+    }
+    #mobile-logo img{
+       margin: 30px 130px;
+        width:120px;
+    }
+    .main-nav{
+        display: none;
+    }
+    #slider{
+        margin-top: 200px;
+        width:100%;
+       margin-left: 0;
+    }
+    #icon-group{
+        margin-left: 0;
+        text-align: center;
+    }
+    .fixed-icons button{
+        bottom: 170px;
+        width: 100px;
+        font-weight: normal;
+    }
+    #image{
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    #feedback{
+        font-size: 12px;
+
+    }
+    .footer{
+        text-align: center;
+    }
+    #mobile-nav{
+        display: block;
+        margin: 150px 0 0 0;
+        height: 70px;
+        background-color: rgb(93, 97, 97);
+        color: white;
+        position: fixed;
+        padding:6px 12px;
+        z-index: 99;
+    }
+    #menu{
+        padding: 6px 0px 6px 10px;
+        margin: 0px;
+    }
+    .mobile-icons{
+     float:right;    
+    
+    }
+    .mobile-icons i{
+        padding: 0 5px;
+    }
+    #slider{
+        margin-top: 250px;
+    }
+    #badge{
+        padding: 0;
+        
+    }
+    #bag{
+        background-color: blue;
+        color: white;
+        padding:3px 6px;
+        border-radius: 50%;
+       
+        font-size: 12px;
+      
+    }
+    #burger{
+        background-color: rgb(93, 97, 97);
+        color: white;
+        border: none;
+        font-size:25px;
+        padding: 0;
+
+    }
+    #close{
+        display: none;
+        background-color: rgb(93, 97, 97);
+        color: white;
+        border: none;
+        font-size:25px;
+        padding: 0;
+        position: absolute;
+    }
+    #mobile{
+        width: 0;
+        height:550px;
+       display: none;
+       position:fixed;
+       top:0px;
+        left: -10px;
+        z-index: 1;
+        overflow-x: hidden; 
+        padding-top:20px; 
+        transition: 0.6s; 
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    #mobile p{
+        color: darkslategrey;
+        font-size: 17px;
+        text-align: center;
+        transition:  0.3s;
+    }
+    
+    .list-group-item a,.list-item-a{
+        text-decoration: none;
+        font-size: 18px;
+        color: darkslategrey;
+        padding: 8px 8px 8px 5px;
+        text-align: left;
+        transition: 0.3s;
+    }
+    #item-active{
+        background-color:rgb(93, 97, 97) ;
+        width: 220px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;    
+        padding: 10px ;
+        transition: 0.3s;
+    } 
+    .mobile-a i,.list-item-a i{
+        font-size: 19px;
+        margin-left:13px;
+        color: black;
+        right: 5px;
+        position: absolute;
+        transition: 0.3s;
+    }
+    #produse-content,#ceai-content,#miere-content,
+    #dulciuri-content,#uleiuri-content,#carte-content,#afaceri-content{
+        display: none;
+        position: fixed;
+        top:0;
+        left:0;
+        width:270px;
+        height: 550px;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        overflow-x: hidden; 
+        transition: 0.5s; 
+    }
+    
+}
